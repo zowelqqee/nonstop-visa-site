@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Manrope } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { BackToTop } from "@/components/back-to-top";
+import { MobileStickyCta } from "@/components/mobile-sticky-cta";
 import "./globals.css";
 
 const inter = Inter({
@@ -37,6 +39,8 @@ export default function RootLayout({
     <html lang="ru" className={`${inter.variable} ${manrope.variable}`}>
       <body className="antialiased">
         {children}
+        <MobileStickyCta />
+        <BackToTop />
         <Analytics />
       </body>
     </html>

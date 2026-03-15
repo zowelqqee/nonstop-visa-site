@@ -38,15 +38,16 @@ export function Services({ learnMoreBehavior = "modal" }: ServicesProps) {
               Услуги
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-              Всё необходимое для{" "}
+              Выберите услугу и{" "}
               <span className="gold-gradient-text">
-                релокации и запуска бизнеса
+                начните процесс сегодня
               </span>
             </h2>
 
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              Комплексное сопровождение релокации в Армению. От получения ВНЖ до
-              открытия бизнеса и банковского счета.
+              В каждой карточке есть формат, срок и результат. Нажмите
+              «Подробнее», чтобы увидеть точный состав услуги, стоимость и
+              следующий шаг.
             </p>
           </div>
 

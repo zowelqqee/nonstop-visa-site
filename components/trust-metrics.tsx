@@ -9,28 +9,28 @@ const metrics = [
     value: 180,
     suffix: "+",
     label: "Клиентов получили ВНЖ",
-    description: "Успешно релоцированы в Армению",
+    description: "Реальные завершенные кейсы",
   },
   {
     icon: Calendar,
     value: 5,
     suffix: "+",
     label: "Лет опыта",
-    description: "Практический опыт работы с миграцией и бизнесом",
+    description: "Непрерывная практика с 2019 года",
   },
   {
     icon: CheckCircle2,
     value: 95,
     suffix: "%",
     label: "Успешных кейсов",
-    description: "Положительное решение по заявлениям",
+    description: "Высокая предсказуемость результата",
   },
   {
     icon: Clock,
     value: 14,
     suffix: "",
     label: "Дней в среднем",
-    description: "Средний срок получения результата",
+    description: "От старта до первого результата",
   },
 ];
 

@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@vercel/analytics";
 import {
   Dialog,
   DialogContent,
@@ -52,7 +53,7 @@ export function Modal({ open, onOpenChange, service }: ModalProps) {
           <div className="grid gap-3 pt-5 sm:grid-cols-2">
             <div className="rounded-lg border border-border/50 bg-background/30 p-4">
               <p className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
-                Стоимость
+                Стоимость от
               </p>
               <p className="mt-2 text-lg font-semibold text-foreground">
                 {service.pricing.from}
@@ -75,10 +76,12 @@ export function Modal({ open, onOpenChange, service }: ModalProps) {
             </div>
           </div>
 
-          <div className="space-y-3">
-            <h4 className={sectionTitleClass}>Описание услуги</h4>
-            <p className="whitespace-pre-line break-words text-sm leading-relaxed text-muted-foreground">
-              {service.full}
+          <div className="rounded-lg border border-primary/20 bg-primary/5 p-4">
+            <p className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
+              Для кого
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-foreground">
+              {service.details.forWho}
             </p>
           </div>
 
@@ -95,6 +98,27 @@ export function Modal({ open, onOpenChange, service }: ModalProps) {
           </div>
 
           <div className="space-y-3">
+            <h4 className={sectionTitleClass}>Следующий шаг</h4>
+            <div className="rounded-lg border border-border/50 bg-background/30 p-4">
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                Отправьте заявку, и мы вернемся с персональным планом: какие
+                документы нужны именно вам, сколько займет процесс и какой бюджет
+                нужен на старте.
+              </p>
+              <a
+                href="#contact"
+                onClick={() => {
+                  track("cta_click", { source: "service_modal_next_step", service: service.slug });
+                  onOpenChange(false);
+                }}
+                className="mt-4 inline-flex rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110"
+              >
+                Перейти к заявке
+              </a>
+            </div>
+          </div>
+
+          <div className="space-y-3">
             <h4 className={sectionTitleClass}>Необходимые документы</h4>
             <ul className="space-y-2 text-sm leading-relaxed text-muted-foreground">
               {service.details.requiredDocuments.map((item) => (
@@ -104,20 +128,6 @@ export function Modal({ open, onOpenChange, service }: ModalProps) {
                 </li>
               ))}
             </ul>
-          </div>
-
-          <div className="space-y-3">
-            <h4 className={sectionTitleClass}>Этапы работы</h4>
-            <ol className="space-y-2 text-sm leading-relaxed text-muted-foreground">
-              {service.details.processSteps.map((step, index) => (
-                <li key={step} className="flex gap-2">
-                  <span className="shrink-0 font-semibold text-primary">
-                    {index + 1}.
-                  </span>
-                  <span>{step}</span>
-                </li>
-              ))}
-            </ol>
           </div>
 
           <div className="space-y-3">

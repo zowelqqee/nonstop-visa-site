@@ -1,5 +1,3 @@
-"use client";
-
 import { MessageCircle, Send, Mail, MapPin } from "lucide-react";
 
 const footerLinks = [

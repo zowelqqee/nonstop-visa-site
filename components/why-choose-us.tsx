@@ -1,11 +1,7 @@
-"use client";
-
 import {
   Scale,
   Clock,
-  BookOpen,
   HeartHandshake,
-  Languages,
 } from "lucide-react";
 
 const reasons = [
@@ -13,31 +9,19 @@ const reasons = [
     icon: Scale,
     title: "Официальное юридическое сопровождение",
     description:
-      "Работаем в полном соответствии с законодательством Армении. Имеем практический опыт взаимодействия с миграционными органами и банками.",
+      "Работаем по требованиям законодательства Армении и заранее снимаем юридические риски.",
   },
   {
     icon: Clock,
     title: "Более 5 лет опыта",
     description:
-      "С 2019 года сопровождаем клиентов при релокации, получении ВНЖ и регистрации бизнеса. Более 180 успешных кейсов.",
-  },
-  {
-    icon: BookOpen,
-    title: "Глубокое знание системы",
-    description:
-      "Понимаем особенности работы государственных органов, банковской системы и налогового законодательства Армении.",
+      "С 2019 года ведем кейсы по ВНЖ, бизнесу и банковским вопросам. Более 180 завершенных проектов.",
   },
   {
     icon: HeartHandshake,
     title: "Полное сопровождение",
     description:
-      "Берем на себя весь процесс: от подготовки документов до получения результата. Сопровождаем на каждом этапе.",
-  },
-  {
-    icon: Languages,
-    title: "Поддержка на русском, английском и армянском",
-    description:
-      "Обеспечиваем комфортное взаимодействие без языковых барьеров на всех этапах работы.",
+      "Остаемся на связи на всем пути: от заявки до финального результата и следующих шагов.",
   },
 ];
 
@@ -52,24 +36,19 @@ export function WhyChooseUs() {
             Почему Non-Stop Visa
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            Надежный партнер для{" "}
-            <span className="gold-gradient-text">
-              релокации и бизнеса
-            </span>
+            Почему с нами проще
           </h2>
 
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-            Мы обеспечиваем юридическую безопасность, прозрачность процесса и гарантированный результат для каждого клиента.
+            Фокус на предсказуемом результате: понятные шаги, сроки и сопровождение без лишней сложности.
           </p>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {reasons.map((reason, i) => (
+          {reasons.map((reason) => (
             <div
               key={reason.title}
-              className={`group relative overflow-hidden rounded-xl border border-border/50 bg-card p-8 transition-all duration-500 hover:border-primary/30 ${
-                i >= 3 ? "lg:col-span-1" : ""
-              }`}
+              className="group relative overflow-hidden rounded-xl border border-border/50 bg-card p-8 transition-all duration-500 hover:border-primary/30"
             >
               <div className="absolute right-0 top-0 h-32 w-32 -translate-y-8 translate-x-8 rounded-full bg-primary/5 blur-2xl transition-all duration-500 group-hover:bg-primary/10" />
               <div className="relative">

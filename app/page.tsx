@@ -6,25 +6,23 @@ import { TargetClients } from "@/components/target-clients";
 import { Process } from "@/components/process";
 import { WhyChooseUs } from "@/components/why-choose-us";
 import { CaseStudies } from "@/components/case-studies";
-import { Team } from "@/components/team";
 import { CtaSection } from "@/components/cta-section";
 import { FaqSection } from "@/components/faq-section";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden pb-24 md:pb-0">
       <Navbar />
       <Hero />
-      <TrustMetrics />
       <Services learnMoreBehavior="modal" />
-      <TargetClients />
       <Process />
-      <WhyChooseUs />
+      <TrustMetrics />
+      <TargetClients />
       <CaseStudies />
-      <Team />
-      <CtaSection />
+      <WhyChooseUs />
       <FaqSection />
+      <CtaSection />
       <Footer />
     </main>
   );

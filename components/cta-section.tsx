@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export function CtaSection() {
@@ -11,6 +12,7 @@ export function CtaSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (name && contact) {
+      track("lead_form_submit", { source: "cta_section" });
       setSubmitted(true);
     }
   };
@@ -33,10 +35,10 @@ export function CtaSection() {
                     Бесплатная консультация
                   </p>
                   <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                    Получите консультацию специалиста
+                    Оставьте заявку за 30 секунд
                   </h2>
                   <p className="mt-4 text-muted-foreground leading-relaxed">
-                    Оставьте контактные данные, и специалист Non-Stop Visa свяжется с вами в течение 24 часов.
+                    Свяжемся с вами в Telegram или WhatsApp и предложим лучший стартовый сценарий под вашу задачу.
                   </p>
                 </div>
 
@@ -71,6 +73,7 @@ export function CtaSection() {
                     <input
                       id="contact"
                       type="text"
+                      inputMode="text"
                       value={contact}
                       onChange={(e) => setContact(e.target.value)}
                       placeholder="@username или +7 999 123-45-67"
@@ -82,14 +85,14 @@ export function CtaSection() {
                     type="submit"
                     className="group mt-2 flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:brightness-110 hover:gap-3"
                   >
-                    Получить консультацию
+                    Отправить заявку
                     <ArrowRight
                       size={16}
                       className="transition-transform group-hover:translate-x-0.5"
                     />
                   </button>
                   <p className="text-center text-xs text-muted-foreground">
-                    Консультация бесплатна и ни к чему не обязывает. Мы ответим в течение 24 часов.
+                    Это бесплатно и без обязательств. Обычно отвечаем в тот же день.
                   </p>
                 </form>
               </>
@@ -102,7 +105,7 @@ export function CtaSection() {
                   Заявка отправлена
                 </h3>
                 <p className="mt-3 text-muted-foreground">
-                  Специалист Non-Stop Visa свяжется с вами в течение 24 часов в Telegram или WhatsApp.
+                  Мы свяжемся с вами в Telegram или WhatsApp и отправим дальнейшие шаги.
                 </p>
               </div>
             )}
