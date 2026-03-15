@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { track } from "@vercel/analytics";
+import Image from "next/image";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export function CtaSection() {
@@ -20,10 +21,19 @@ export function CtaSection() {
   return (
     <section id="contact" className="relative py-24">
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
+        <Image
+          src="/images/hero-yerevan.jpg"
+          alt="Панорама Еревана"
+          fill
+          className="object-cover"
+          quality={72}
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/55 to-background/70" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/85" />
       </div>
       <div className="relative mx-auto max-w-3xl px-6">
-        <div className="overflow-hidden rounded-2xl border border-primary/20 bg-card">
+        <div className="overflow-hidden rounded-2xl border border-primary/20 bg-card/90 backdrop-blur-sm">
           {/* Top accent bar */}
           <div className="h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
 
