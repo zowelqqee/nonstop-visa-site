@@ -29,7 +29,7 @@ export function Hero() {
     <section
       id="top"
       ref={sectionRef}
-      className="relative flex min-h-screen items-center overflow-hidden pt-24 lg:pt-28"
+      className="relative flex min-h-screen items-start overflow-hidden pt-16 sm:pt-20 lg:items-center lg:pt-28"
     >
       <div className="absolute inset-0">
         <Image
@@ -45,7 +45,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/60" />
       </div>
 
-      <div className="relative mx-auto grid max-w-7xl gap-10 px-6 pt-28 pb-24 lg:grid-cols-2 lg:items-center lg:gap-14 lg:pt-0">
+      <div className="relative mx-auto grid max-w-7xl gap-10 px-6 pt-8 pb-16 sm:pt-12 sm:pb-20 lg:grid-cols-2 lg:items-center lg:gap-14 lg:pt-0 lg:pb-24">
         <div className="flex flex-col gap-7">
           <div data-animate className="opacity-0" style={{ animationDelay: "0.1s" }}>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5">
