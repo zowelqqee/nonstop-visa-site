@@ -113,7 +113,7 @@ export function Modal({ open, onOpenChange, service }: ModalProps) {
                 }}
                 className="mt-4 inline-flex rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110"
               >
-                Перейти к заявке
+                Отправить
               </a>
             </div>
           </div>

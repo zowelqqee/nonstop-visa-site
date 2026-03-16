@@ -1,6 +1,5 @@
 import {
   Building2,
-  Calculator,
   Landmark,
   Plane,
   Shield,
@@ -12,7 +11,6 @@ const iconMap: Record<ServiceIcon, LucideIcon> = {
   shield: Shield,
   building: Building2,
   landmark: Landmark,
-  calculator: Calculator,
   plane: Plane,
 };
 
