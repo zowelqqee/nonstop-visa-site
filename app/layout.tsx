@@ -28,6 +28,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Non-Stop Visa",
   description: "Relocation and business setup in Armenia",
+  icons: {
+    icon: "/images/favicon.jpg",
+    shortcut: "/images/favicon.jpg",
+    apple: "/images/favicon.jpg",
+  },
 };
 
 export default function RootLayout({
