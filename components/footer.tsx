@@ -1,4 +1,4 @@
-import { MessageCircle, Send, Mail, MapPin } from "lucide-react";
+import { Send, Mail, MapPin } from "lucide-react";
 
 const footerLinks = [
   { label: "Услуги", href: "#services" },
@@ -28,16 +28,6 @@ export function Footer() {
             </p>
 
             <div className="mt-6 flex items-center gap-3">
-
-              <a
-                href="https://wa.me/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-border/50 text-muted-foreground transition-all hover:border-primary/30 hover:text-primary"
-                aria-label="WhatsApp"
-              >
-                <MessageCircle size={18} />
-              </a>
 
               <a
                 href="http://t.me/nonstopvisa"
@@ -88,16 +78,6 @@ export function Footer() {
                 <Mail size={16} className="mt-0.5 shrink-0 text-primary/60" />
                 <span className="text-sm text-muted-foreground">
                   info@nonstopvisa.com
-                </span>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <MessageCircle
-                  size={16}
-                  className="mt-0.5 shrink-0 text-primary/60"
-                />
-                <span className="text-sm text-muted-foreground">
-                  WhatsApp: +374 XX XXX XXXX
                 </span>
               </li>
 

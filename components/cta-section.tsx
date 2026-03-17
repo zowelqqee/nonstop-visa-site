@@ -48,7 +48,7 @@ export function CtaSection() {
                     Оставьте заявку за 30 секунд
                   </h2>
                   <p className="mt-4 text-muted-foreground leading-relaxed">
-                    Свяжемся с вами в Telegram или WhatsApp и предложим лучший стартовый сценарий под вашу задачу.
+                    Свяжемся с вами в Telegram и предложим лучший стартовый сценарий под вашу задачу.
                   </p>
                 </div>
 
@@ -78,7 +78,7 @@ export function CtaSection() {
                       htmlFor="contact"
                       className="mb-2 block text-sm font-medium text-foreground/80"
                     >
-                      Telegram или WhatsApp
+                      Telegram
                     </label>
                     <input
                       id="contact"
@@ -86,7 +86,7 @@ export function CtaSection() {
                       inputMode="text"
                       value={contact}
                       onChange={(e) => setContact(e.target.value)}
-                      placeholder="@username или +7 999 123-45-67"
+                      placeholder="@username"
                       required
                       className="w-full rounded-lg border border-border bg-secondary/50 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 transition-colors focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary/50"
                     />
@@ -115,7 +115,7 @@ export function CtaSection() {
                   Заявка отправлена
                 </h3>
                 <p className="mt-3 text-muted-foreground">
-                  Мы свяжемся с вами в Telegram или WhatsApp и отправим дальнейшие шаги.
+                  Мы свяжемся с вами в Telegram и отправим дальнейшие шаги.
                 </p>
               </div>
             )}

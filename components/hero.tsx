@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { track } from "@vercel/analytics";
 import Image from "next/image";
-import { ArrowRight, MessageCircle, Send } from "lucide-react";
+import { ArrowRight, Send } from "lucide-react";
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -106,15 +106,6 @@ export function Hero() {
             className="opacity-0 flex flex-wrap items-center gap-3 text-sm text-muted-foreground"
             style={{ animationDelay: "0.9s" }}
           >
-            <a
-              href="https://wa.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg border border-border/70 bg-secondary/40 px-4 py-2.5 transition-all duration-300 hover:border-primary/40 hover:bg-secondary"
-            >
-              <MessageCircle size={16} />
-              WhatsApp
-            </a>
             <a
               href="http://t.me/nonstopvisa"
               target="_blank"
