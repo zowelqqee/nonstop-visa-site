@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 export function Team() {
   return (
@@ -51,13 +51,6 @@ export function Team() {
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={18} />
-                </a>
-                <a
-                  href="#"
-                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-border/50 text-muted-foreground transition-all hover:border-primary/30 hover:text-primary"
-                  aria-label="Email"
-                >
-                  <Mail size={18} />
                 </a>
               </div>
             </div>

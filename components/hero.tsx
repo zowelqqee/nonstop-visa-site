@@ -116,7 +116,7 @@ export function Hero() {
               WhatsApp
             </a>
             <a
-              href="https://t.me/"
+              href="http://t.me/nonstopvisa"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-border/70 bg-secondary/40 px-4 py-2.5 transition-all duration-300 hover:border-primary/40 hover:bg-secondary"

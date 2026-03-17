@@ -40,21 +40,13 @@ export function Footer() {
               </a>
 
               <a
-                href="https://t.me/"
+                href="http://t.me/nonstopvisa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-lg border border-border/50 text-muted-foreground transition-all hover:border-primary/30 hover:text-primary"
                 aria-label="Telegram"
               >
                 <Send size={18} />
-              </a>
-
-              <a
-                href="mailto:info@nonstopvisa.com"
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-border/50 text-muted-foreground transition-all hover:border-primary/30 hover:text-primary"
-                aria-label="Email"
-              >
-                <Mail size={18} />
               </a>
 
             </div>
