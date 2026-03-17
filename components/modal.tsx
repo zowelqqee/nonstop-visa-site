@@ -53,7 +53,7 @@ export function Modal({ open, onOpenChange, service }: ModalProps) {
           <div className="grid gap-3 pt-5 sm:grid-cols-2">
             <div className="rounded-lg border border-border/50 bg-background/30 p-4">
               <p className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
-                Стоимость от
+                Стоимость
               </p>
               <p className="mt-2 text-lg font-semibold text-foreground">
                 {service.pricing.from}

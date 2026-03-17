@@ -38,7 +38,7 @@ export const services: Service[] = [
     icon: "shield",
     tag: "ВНЖ / ПМЖ",
     pricing: {
-      from: "$1 300",
+      from: "1300$",
       paymentFormat:
         "Фиксированная стоимость услуги. Сопровождение водителя и консультанта входит в стоимость.",
       additionalCosts: [
@@ -89,7 +89,7 @@ export const services: Service[] = [
     icon: "shield",
     tag: "Прописка",
     pricing: {
-      from: "$500",
+      from: "500$",
       paymentFormat:
         "Фиксированная стоимость услуги. Сопровождение водителя и консультанта входит в стоимость.",
       additionalCosts: [
@@ -136,7 +136,7 @@ export const services: Service[] = [
     icon: "shield",
     tag: "Социальная карта",
     pricing: {
-      from: "$200",
+      from: "200$",
       paymentFormat:
         "Фиксированная стоимость услуги. Сопровождение водителя и консультанта входит в стоимость.",
       additionalCosts: [
@@ -183,7 +183,7 @@ export const services: Service[] = [
     icon: "landmark",
     tag: "Личный и бизнес счет",
     pricing: {
-      from: "$500",
+      from: "500$",
       paymentFormat:
         "Фиксированная стоимость услуги. Сопровождение водителя и консультанта входит в стоимость.",
       additionalCosts: [
@@ -232,7 +232,7 @@ export const services: Service[] = [
     icon: "shield",
     tag: "Гражданство",
     pricing: {
-      from: "$1 600",
+      from: "1600$",
       paymentFormat:
         "Фиксированная стоимость услуги. Сопровождение водителя и консультанта входит в стоимость.",
       additionalCosts: [
@@ -281,7 +281,7 @@ export const services: Service[] = [
     icon: "plane",
     tag: "Шенген и другие визы",
     pricing: {
-      from: "$500",
+      from: "500$",
       paymentFormat:
         "Фиксированная стоимость услуги. Сопровождение водителя и консультанта входит в стоимость.",
       additionalCosts: [
