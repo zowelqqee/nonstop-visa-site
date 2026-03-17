@@ -75,13 +75,6 @@ export function Footer() {
             <ul className="flex flex-col gap-4">
 
               <li className="flex items-start gap-3">
-                <Mail size={16} className="mt-0.5 shrink-0 text-primary/60" />
-                <span className="text-sm text-muted-foreground">
-                  info@nonstopvisa.com
-                </span>
-              </li>
-
-              <li className="flex items-start gap-3">
                 <Send size={16} className="mt-0.5 shrink-0 text-primary/60" />
                 <span className="text-sm text-muted-foreground">
                   Telegram: @nonstopvisa
